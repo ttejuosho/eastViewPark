@@ -1,37 +1,13 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import './materialize/css/materialize.css';
-import './materialize/fonts/roboto/Roboto-Bold.woff';
-// import Header from './components/Header.js';
-
+import Header from './components/Header.js';
+import Home from './components/Home.js';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-        <nav class="nav-extended">
-        <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
-        <ul class="right hide-on-med-and-down">
-            <li><a>A link</a></li>
-            <li><a>A second link</a></li>
-            <li><a>A third link</a></li>
-        </ul>
-        </div>
-        <div class="nav-content">
-        <span class="nav-title">Title</span>
-        <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
-            <i class="material-icons">add</i>
-        </a>
-        </div>
-    </nav>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-       
+      <div>
+        <Header />
+        <Home />
       </div>
     );
   }
